@@ -1,0 +1,342 @@
+*, *::before, ::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Catamaran';   /* sets our font to the "Catamaran" typeface */
+    color: black;               /* sets the text color to white */
+    min-height: 100%;           /*says the height of the body must be, at minimum, 100% of the window */
+}
+
+
+/*
+a:link,
+a:visited {
+    color: white;
+}
+*/
+
+body.landing {
+    background-color: white; /* sets the background color to an RGB value (see below) */
+}
+
+.navbar {
+    position: relative;
+    padding: 1rem;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #000, #2f9fa3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #000, #2f9fa3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #000, #2f9fa3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #000, #2f9fa3); /* Standard syntax */
+}
+
+.navbar .logo {
+    position: relative;
+    left: 1rem;
+    cursor: pointer; /*produces the finer-pointer icon when you hover over the logo*/
+}
+
+.navbar .links-container {
+    display: table;
+    position: relative;
+    float: right;
+    height: 75px;
+    text-decoration: none;
+}
+
+.links-container .navbar-link {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: middle;
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+
+.links-container .navbar-link:hover {
+    color: rgb(47, 159, 163);
+}
+
+.links-container .navbar-link:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0);
+}
+
+
+.ion-calendar {
+    padding-right: 1rem;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/images/Braid.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-quote {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.call-to-action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -200px;
+    max-height: 20%;
+    max-width: 75%;
+    min-height: 50px;
+    min-width: 200px;
+    margin: auto;
+    width: 400px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: rgb(47, 159, 163);
+    padding: 1% 2% 1% 2%;
+    color: red;
+    text-transform: uppercase;
+    
+}
+
+.call-to-action a:visited, 
+.call-to-action a:link, 
+.call-to-action a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.address-details {
+    position: relative;
+}
+
+.map {
+    position: relative;
+    margin: auto;
+    width: 85%;
+}
+
+iframe {
+    width: 100%;
+    padding-top: 7%;
+    height: 250px;
+    
+}
+
+.background-uber {
+    width: 85%;
+    background: #0d0d1e; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#282836, #0d0d1e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#282836, #0d0d1e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#282836, #0d0d1e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#282836, #0d0d1e); /* Standard syntax */
+    height: auto;
+    margin: auto;
+}
+
+.uber-button {
+    position: relative;
+    background-image: url(../assets/images/uber-button300w.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 85%;
+    height: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.request {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    text-transform: uppercase;
+    font-family: FF Clan Pro Medium;
+    letter-spacing: 0.1rem;
+}
+
+.request a:visited, 
+.request a:link, 
+.request a:hover {
+    color: #1fbad6;
+    text-decoration: none;
+}
+
+/*
+#time {
+    position: relative;
+    color: white;
+    text-align: right;
+    padding: 14px 10px 0px 0px;
+}
+
+#time:hover {
+    color: #1fbad6;
+}
+
+*/
+
+.testimonial-photo img {
+    width: 85%;
+    padding-top: 7%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    
+}
+
+.testimonial-quote {
+    padding: 0% 7% 0% 7%;
+    font-style: italic;
+}
+
+.testimonials {
+    position: relative;
+}
+ 
+.feature {
+     position: relative;
+     text-align: center;
+     opacity: 1;
+ }
+
+.contact-form {
+    text-transform: lowercase;
+    padding: 1rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+.contact-form-fields {
+    position: relative;
+    margin: auto;
+    width: 75%;
+}
+
+.pure-form input {
+    width: 100%;
+}
+
+.pure-form label {
+    text-align: left;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.pure-button-primary {
+    margin-top: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    text-transform: lowercase;
+    border: solid white 2px;
+    border-radius: 0px;
+}
+
+/* Medium and small screens (640px) */
+@media (min-width: 640px) {
+    html { font-size: 120%; }
+    
+    .hero-content {
+        min-height: 350px;
+    }
+    
+    .address-details {
+        top: 25px;
+    }   
+    
+    .map {
+        height: auto;
+    }
+    
+    iframe {
+        height: 250px;
+    }
+    
+    .testimonial-quote {
+        padding: 0% 0% 0% 0%;
+    
+    }
+    
+    #time {
+        padding: 12px 10px 0px 0px;
+    }
+    
+    .uber-button {
+        display: none;
+    }
+    
+    .column {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .column.full { width: 100%; }
+    .column-two-thirds { width:66.7%; }
+    .column.half { width: 50%; }
+    .column.third { width: 33.3%; }
+    .column.fourth { width: 25%; }
+    .column.flow-opposite { float: right; }
+    
+/*Large screens (1024px) */
+@media (min-width: 1024px) {
+    html { font-size: 170%; }
+}
+    .hero-content {
+        min-height: 550px;
+    }
+    
+    .call-to-action {
+        bottom: -200px;
+        width: 700px;
+    }
+    
+    iframe {
+        height: 500px;
+    }
+    
+    .testimonial-photo img {
+        width: 100%;   
+    }
+    
+    .feature {
+        text-align: left;
+    }
+    
+    .clearfix::before,
+    .clearfix::after {
+       content: " ";
+       display: table;
+    }
+
+    .clearfix::after {
+       clear: both;
+    }
