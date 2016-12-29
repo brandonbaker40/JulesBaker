@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*******  UNIVERSAL  ********/
 html {
     height: 100%; /* makes sure our HTML takes up 100% of the browser window */
     font-size: 100%;
@@ -15,18 +16,11 @@ body {
     min-height: 100%;           /*says the height of the body must be, at minimum, 100% of the window */
 }
 
-
-/*
-a:link,
-a:visited {
-    color: white;
-}
-*/
-
 body.landing {
     background-color: white; /* sets the background color to an RGB value (see below) */
 }
 
+/*******  NAVBAR  ********/
 .navbar {
     position: relative;
     padding: 1rem;
@@ -78,6 +72,7 @@ body.landing {
     padding-right: 1rem;
 }
 
+/*******  HERO  ********/
 .hero-content {
     position: relative;
     width: 100%;
@@ -129,6 +124,8 @@ body.landing {
     text-decoration: none;
 }
 
+/*******  PART 1  ********/
+
 .address-details {
     position: relative;
 }
@@ -142,10 +139,11 @@ body.landing {
 iframe {
     width: 100%;
     padding-top: 7%;
-    height: 250px;
-    
+    height: 250px; 
 }
 
+
+/*******  MOBILE ONLY ELEMENTS START  ********/
 .background-uber {
     width: 85%;
     background: #0d0d1e; /* For browsers that do not support gradients */
@@ -165,8 +163,7 @@ iframe {
     width: 85%;
     height: 43px;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;   
 }
 
 .request {
@@ -184,21 +181,9 @@ iframe {
     color: #1fbad6;
     text-decoration: none;
 }
+/*******  MOBILE ONLY ELEMENTS END  ********/
 
-/*
-#time {
-    position: relative;
-    color: white;
-    text-align: right;
-    padding: 14px 10px 0px 0px;
-}
-
-#time:hover {
-    color: #1fbad6;
-}
-
-*/
-
+/*******  PART 2  ********/
 .testimonial-photo img {
     width: 85%;
     padding-top: 7%;
@@ -206,7 +191,6 @@ iframe {
     background-position: center center;
     background-size: cover;
     opacity: 1;
-    
 }
 
 .testimonial-quote {
@@ -224,6 +208,7 @@ iframe {
      opacity: 1;
  }
 
+/*******  CONTACT FORM  ********/
 .contact-form {
     text-transform: lowercase;
     padding: 1rem;
@@ -270,25 +255,36 @@ iframe {
     
     .address-details {
         top: 25px;
+        text-align: right;
     }   
+    
+    .full-width-map {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     
     .map {
         height: auto;
     }
     
     iframe {
-        height: 250px;
+        height: 425px;
+    }
+    
+    .testimonial-photo img {
+        width: 100%;
     }
     
     .testimonial-quote {
         padding: 0% 0% 0% 0%;
-    
     }
     
     #time {
         padding: 12px 10px 0px 0px;
     }
     
+    /** HIDES UBER ON NON-MOBILE VIEWPORTS **/
     .uber-button {
         display: none;
     }
@@ -299,6 +295,9 @@ iframe {
         padding-right: 1rem;
     }
     
+    
+    
+    /** USED WITH ONLOAD.JS FOR HANDLEWINDOWSIZE FUNCTION **/
     .column.full { width: 100%; }
     .column-two-thirds { width:66.7%; }
     .column.half { width: 50%; }
@@ -308,8 +307,9 @@ iframe {
     
 /*Large screens (1024px) */
 @media (min-width: 1024px) {
-    html { font-size: 170%; }
-}
+    html { font-size: 170%; 
+    }
+    
     .hero-content {
         min-height: 550px;
     }
@@ -320,17 +320,14 @@ iframe {
     }
     
     iframe {
-        height: 500px;
+        height: 425px;
     }
     
-    .testimonial-photo img {
-        width: 100%;   
-    }
     
     .feature {
         text-align: left;
     }
-    
+      
     .clearfix::before,
     .clearfix::after {
        content: " ";
@@ -340,3 +337,4 @@ iframe {
     .clearfix::after {
        clear: both;
     }
+} 
