@@ -126,10 +126,6 @@ body.landing {
 
 /*******  PART 1  ********/
 
-.address-details {
-    position: relative;
-}
-
 .map {
     position: relative;
     margin: auto;
@@ -251,12 +247,7 @@ iframe {
     
     .hero-content {
         min-height: 350px;
-    }
-    
-    .address-details {
-        top: 25px;
-        text-align: right;
-    }   
+    }  
     
     .full-width-map {
         width: 100%;
