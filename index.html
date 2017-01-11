@@ -1,28 +1,28 @@
 <!--JULIA-->
 <!DOCTYPE html>
 <html>
- <head>
+<head>
      <title>Jules Baker</title>
      <meta name="viewport" content="width=device-width, initial-scale=1">
      
      <!----------FONT------------>
      <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
      
-     <!----------ICONS------------>
-     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-     
-     <!----------PURE CSS FOR CONTACT FORM------------>
-     <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/buttons-min.css&pure/0.6.0/forms-min.css">
-     
-     <!----------NORMALIZE------------>
-     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-     
      <!----------MAIN------------>
      <link rel="stylesheet" type="text/css" href="styles/main.css">
      
+     <!----------ICONS------------>
+     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+     <!----------NORMALIZE------------>
+     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+     
      <!----------SCHEDULE APPOINTMENTS WITH CALENDLY------------>
      <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
- </head>
+    
+    
+ 
+</head>
  
  <!----------JQUERY------------>  
  <script src="scripts/jquery-2.1.1.min.js"></script>
@@ -32,6 +32,8 @@
  
  <!--NEXT ITERATION OF SITE-->   
  <!--<script src="scripts/uber.js"></script>-->
+    
+
  
  <!----------FF CLAN PRO MEDIUM (TRIAL) (UBER FONT) ------------>   
  <script type="text/javascript">
@@ -69,19 +71,14 @@
 
 <!--HERO-->
 <section class ="hero-content">
-    
-    <div class="hero-photo">
         
-        <span class="hero-quote">I am an artist<br />&amp;<br />Hair is my canvas</span>
-        
-        <!--PURE CSS DEPENDENT-->   
-        <button class="pure-button call-to-action">
-                
-                <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/brandonbaker40');return false;"><span class="ion-calendar"></span>BOOK NOW</a>
-    
-        </button>
-    
-    </div>
+    <span class="hero-quote">I am an artist<br />&amp;<br />Hair is my canvas</span>
+
+    <button class="call-to-action-button" onclick="Calendly.showPopupWidget('https://calendly.com/brandonbaker40');return false;">
+
+            <span class="ion-calendar"></span><span class="cta-copy">BOOK NOW</span>
+
+    </button>
 
 </section>
          
@@ -131,7 +128,7 @@
                 <!--UBER API CALL-->
                 <div>
                     
-                    <!--EXECUTES CALL IF UBER APP INSTALLED, ELSE SIGN UP PAGE--> 
+                    <!--OPENS UBER APP IF INSTALLED, ELSE REDIRECTS TO SIGN UP PAGE--> 
                     <span class="request"><a href="https://m.uber.com/ul/?client_id=XXpsVFuuKCVJup4n2nXMC-4pdIT90srQ&action=setPickup&pickup=my_location&dropoff[latitude]=38.915286&dropoff[longitude]=-77.031726&dropoff[nickname]=Immortal%20Beloved&dropoff[formatted_address]=1831%2014th%20St%20NW%2C%20Washington%2C%20DC%2020009" target="_blank">[ Request ]</a>
                     </span>
                     
@@ -177,42 +174,69 @@
                      
                     <p class="testimonial-quote">"Can a woman find a good hairdresser? Does a tree that falls in the forest make a sound? The answer doesn't matter if Jules is doing your hair!" </p>
         </div>
+        
+        
              
-    </div>             
+    </div>
     
-    <!--CONTACT FORM-->         
+    <!-- CALL TO ACTION BELOW TESTIMONIAL -->
+    <div class ="button-container">
+
+        <button class="call-to-action-button-2" onclick="Calendly.showPopupWidget('https://calendly.com/brandonbaker40');return false;">
+
+                <span class="ion-calendar"></span><span class="cta-copy">BOOK NOW</span>
+
+        </button>
+
+    </div>
+ </section>   
+     <!--CONTACT FORM-->       
+    <div class="contact-form-background">
     <div class="contact-form">
+
+        <form action="https://getsimpleform.com/messages?form_api_token=df0c0023d919dfd1c3c04db6299a3542" method="post">
+                
+            <h4 class="contact-form-head">Send me a message!</h4>
+
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email">
+
+            <label for="message">Message</label>
+            <!--<input type="text" id="message">-->
+            <textarea id="message" cols="40" rows="5"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+    </div>
+
+
+
+<footer>
     
-        <h5 class="main-content-title">Contact</h5>
-                 
-            <div class="contact-form-fields">
-                    
-                <form class="pure-form pure-form-stacked" action="https://getsimpleform.com/messages?form_api_token=df0c0023d919dfd1c3c04db6299a3542" method="post">
-                        
-                    <fieldset>
-
-                        <div>
-                        <label for="name">Name</label>
-                        <input id="name" type="text">
-
-                        <label for="email">Email</label>
-                        <input id="email" type="email">
-
-                        <label for="name">Message</label>
-                        <textarea class="pure-input-1"></textarea>    
-                        </div>        
-
-                        <button type="submit" class="pure-button pure-button-primary">Submit</button>
-
-                    </fieldset>
-                    
-                </form>
-                 
-            </div>
-            
-        </div>
-
-</section>
+    <div class= "credit">
+    
+        <p>Made from scratch by <strong><a href="http://www.brbaker.com" target="_blank">Brandon Baker</a></strong>.</p>
+        
+    </div>
+    
+    <div>
+        <!-- YEAR AUTO UPDATE -->
+        <p class="copyright">&copy; Copyright Jules Baker
+            <script type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>.
+        </p>
+        
+    </div>
+    
+</footer>
      
 <!-- NAV BAR ICON EFFECTS -->
 <script src="scripts/action.js"></script>

@@ -18,6 +18,7 @@ body {
 
 body.landing {
     background-color: white; /* sets the background color to an RGB value (see below) */
+    /*background-image: url(../assets/images/shears_2.png);*/
 }
 
 /*******  NAVBAR  ********/
@@ -96,7 +97,7 @@ body.landing {
     color: white;
 }
 
-.call-to-action {
+.call-to-action-button {
     position: absolute;
     top: 0;
     left: 0;
@@ -112,9 +113,27 @@ body.landing {
     font-weight: 700;
     background-color: rgb(47, 159, 163);
     padding: 1% 2% 1% 2%;
-    color: red;
     text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
     
+}
+
+.ion-calendar {
+    color: white;
+}
+
+.cont {
+    background-image: url(../assets/images/black_texture.png);
+}
+
+.clearfix {
+    background-color: rgb(0,0,0,0.2);
+}
+
+.cta-copy {
+    color: white;
 }
 
 .call-to-action a:visited, 
@@ -204,41 +223,116 @@ iframe {
      opacity: 1;
  }
 
-/*******  CONTACT FORM  ********/
-.contact-form {
-    text-transform: lowercase;
-    padding: 1rem;
-    font-weight: 700;
+/******* CALL TO ACTION IN BODY *******/
+
+.button-container {
     position: relative;
+    width: 100%;
+    min-height: 100px;
+    clear: both;
+}
+
+
+.call-to-action-button-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 20%;
+    max-width: 75%;
+    min-height: 50px;
+    min-width: 150px;
+    margin: auto;
+    width: 400px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: rgb(47, 159, 163);
+    padding: 1% 2% 1% 2%;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*******  CONTACT FORM  ********/
+
+.contact-form-background {
+    background-image: url(../assets/images/black_texture.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    font-weight: 700;
+}
+
+.contact-form-head {
     text-align: center;
 }
 
-.contact-form-fields {
-    position: relative;
-    margin: auto;
-    width: 75%;
-}
-
-.pure-form input {
+input[type=text], input[type=email]  {
     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.pure-form label {
-    text-align: left;
-    padding: 5px;
-    font-weight: 700;
-}
-
-.pure-button-primary {
-    margin-top: 3%;
-    padding-right: 10%;
-    padding-left: 10%;
-    background-color: black;
-    font-weight: 700;
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(47, 159, 163);
     color: white;
-    text-transform: lowercase;
-    border: solid white 2px;
-    border-radius: 0px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+label[for=message] {
+    display: block;
+    padding-bottom: 8px;
+}
+
+
+
+/******* FOOTER ********/
+
+.credit {
+    text-align: left;
+    font-size: 70%;
+    padding-left: 10px;
+    
+}
+
+.copyright {
+    text-align: left;
+    font-size: 70%;
+    padding-left: 10px;
+    
 }
 
 /* Medium and small screens (640px) */
@@ -286,6 +380,40 @@ iframe {
         padding-right: 1rem;
     }
     
+    .button-container {
+        min-height: 150px;
+    }
+    
+    .call-to-action-button-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 20%;
+    max-width: 75%;
+    min-height: 75px;
+    min-width: 150px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: rgb(47, 159, 163);
+    padding: 1% 2% 1% 2%;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    }
+    
+    .credit {
+        float: left;
+    }
+    
+    .copyright {
+        float: right;
+        text-align: right;
+        padding-right: 10px;
+    
+    }
+    
     
     
     /** USED WITH ONLOAD.JS FOR HANDLEWINDOWSIZE FUNCTION **/
@@ -305,7 +433,7 @@ iframe {
         min-height: 550px;
     }
     
-    .call-to-action {
+    .call-to-action-button {
         bottom: -200px;
         width: 700px;
     }
@@ -317,6 +445,13 @@ iframe {
     
     .feature {
         text-align: left;
+    }
+    
+    .call-to-action-button-2 {
+        max-height: 15%;
+        max-width: 75%;
+        min-height: 100px;
+        min-width: 600px;
     }
       
     .clearfix::before,
