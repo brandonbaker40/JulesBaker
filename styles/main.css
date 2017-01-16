@@ -154,7 +154,7 @@ body.landing {
 }
 
 .julia {
-    height: auto;
+    height: 100%;
 }
 
 .map {
@@ -362,10 +362,6 @@ label[for=message] {
         min-height: 350px;
     }  
     
-     .julia {
-        height: 425px;
-    }
-    
     .full-width-map {
         width: 100%;
         padding-left: 1rem;
@@ -459,6 +455,10 @@ label[for=message] {
     .call-to-action-button {
         bottom: -200px;
         width: 700px;
+    }
+       
+     .julia {
+        height: 85%;
     }
     
     iframe {
