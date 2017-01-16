@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Catamaran';   /* sets our font to the "Catamaran" typeface */
+    font-family: 'Muli';   /* sets our font to the "Muli" typeface */
     color: black;               /* sets the text color to white */
     min-height: 100%;           /*says the height of the body must be, at minimum, 100% of the window */
 }
@@ -89,7 +89,7 @@ body.landing {
     top: 10%;
     left: 20%;
     right: 20%;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
@@ -145,6 +145,18 @@ body.landing {
 
 /*******  PART 1  ********/
 
+.JulesBaker {
+    padding: 0% 7% 0% 7%;
+}
+
+.about {
+    padding: 0% 7% 0% 7%;
+}
+
+.julia {
+    height: auto;
+}
+
 .map {
     position: relative;
     margin: auto;
@@ -159,7 +171,11 @@ iframe {
 
 
 /*******  MOBILE ONLY ELEMENTS START  ********/
+
+
+
 .background-uber {
+    position: relative;
     width: 85%;
     background: #0d0d1e; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#282836, #0d0d1e); /* For Safari 5.1 to 6.0 */
@@ -178,8 +194,9 @@ iframe {
     width: 85%;
     height: 43px;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
 }
+
 
 .request {
     position: absolute;
@@ -199,6 +216,7 @@ iframe {
 /*******  MOBILE ONLY ELEMENTS END  ********/
 
 /*******  PART 2  ********/
+
 .testimonial-photo img {
     width: 85%;
     padding-top: 7%;
@@ -206,6 +224,7 @@ iframe {
     background-position: center center;
     background-size: cover;
     opacity: 1;
+    z-index: 2;
 }
 
 .testimonial-quote {
@@ -270,7 +289,7 @@ iframe {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    width: 75%;
+    width: 85%;
     margin: auto;
     font-weight: 700;
 }
@@ -343,6 +362,10 @@ label[for=message] {
         min-height: 350px;
     }  
     
+     .julia {
+        height: 425px;
+    }
+    
     .full-width-map {
         width: 100%;
         padding-left: 1rem;
@@ -363,10 +386,6 @@ label[for=message] {
     
     .testimonial-quote {
         padding: 0% 0% 0% 0%;
-    }
-    
-    #time {
-        padding: 12px 10px 0px 0px;
     }
     
     /** HIDES UBER ON NON-MOBILE VIEWPORTS **/
@@ -401,6 +420,10 @@ label[for=message] {
     text-transform: uppercase;
     border: 0;
     cursor: pointer;
+    }
+    
+    .contact-form {
+        width: 75%;
     }
     
     .credit {
