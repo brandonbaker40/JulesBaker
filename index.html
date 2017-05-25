@@ -2,29 +2,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title>Jules Baker</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
      
-     <!----------FONT------------>
-     <!--<link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">-->
+    <title>Jules Baker</title>
     
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
-     
-     <!----------MAIN------------>
-     <link rel="stylesheet" type="text/css" href="styles/main.css">
-     
-     <!----------ICONS------------>
-     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     <!----------NORMALIZE------------>
-     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-     
-     <!----------SCHEDULE APPOINTMENTS WITH CALENDLY------------>
-     <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
-    
-    
+    <!----------FONT------------>
+    <!--<link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">-->
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+
+    <!----------MAIN------------>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <!----------ICONS------------>
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!----------NORMALIZE------------>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+
+    <!----------SCHEDULE APPOINTMENTS WITH CALENDLY------------>
+    <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
  
-</head>
+
  
  <!----------JQUERY------------>  
  <script src="scripts/jquery-2.1.1.min.js"></script>
@@ -38,7 +38,7 @@
 
  
  <!----------FF CLAN PRO MEDIUM (TRIAL) (UBER FONT) ------------>   
- <script type="text/javascript">
+ <!--<script type="text/javascript">
     (function() {
         var path = '//easy.myfonts.net/v2/js?sid=161468(font-family=FF+Clan+Pro+Narrow+Thin)&sid=161668(font-family=FF+Clan+Pro+Book)&sid=162099(font-family=FF+Clan+Pro+Medium)&sid=162165(font-family=FF+Clan+Pro+Bold)&key=I8WdpS74Zu',
             protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
@@ -49,53 +49,65 @@
         var head = document.getElementsByTagName("head")[0];
         head.appendChild(trial);
     })();
- </script>
+ </script>-->
+    </head>
  
 <body class ="landing">
     
-<nav class ="navbar">
+<!--- MOBILE NAVBAR ----->
 
-    <a href="index.html" class="logo">
-        <img src ="assets/images/JulesBaker.png" alt="Jules Baker logo">   
-    </a>
+<div class="sticky-mobile-header"></div>
+    
+<nav class="menu">
+    <ul class="active">
+        <li class="ion-social-instagram"><a href="#"></a></li>
+        <li class="ion-social-pinterest"><a href="#"></a></li>
+        <li class="ion-social-facebook"><a href="#"></a></li>
+    </ul>
 
-    <div class="links-container">
-
-        <a href="https://www.instagram.com/jules_ibdc/" target="_blank" class="navbar-link"><span class="ion-social-instagram"></span></a>
-
-        <a href="https://www.pinterest.com/jewelsbkr/hair-styles/" target="_blank" class="navbar-link"><span class="ion-social-pinterest"></span></a>
-
-        <a href="https://www.facebook.com/julia.baker.9849" target="_blank" class="navbar-link"><span class="ion-social-facebook"></span></a>
-
+    <div class="toggle-nav" href="#">&#9776;
+        <div class="logo">
+            <img src="assets/images/LT-200.png"/>
+        </div>
     </div>
-
+    
 </nav>
 
 <!--HERO-->
+<!--<div class="mobile-whitespace"></div>-->
+    
 <section class ="hero-content">
+    
+    
         
-    <span class="hero-quote">I am an artist<br />&amp;<br />Hair is my canvas</span>
+    <!--<span class="hero-quote">I am an artist<br />&amp;<br />Hair is my canvas</span>-->
 
-    <button class="call-to-action-button" onclick="Calendly.showPopupWidget('https://calendly.com/brandonbaker40');return false;">
+    <!--<button class="call-to-action-button" onclick="Calendly.showPopupWidget('https://calendly.com/brandonbaker40');return false;">
+
+            <span class="ion-calendar"></span><span class="cta-copy">BOOK NOW</span>
+
+    </button>-->
+    <a href="https://outlook.office365.com/owa/calendar/RanworthCo@bakerrehabgroup.com/bookings/" target="_blank">
+    <button class="call-to-action-button">
 
             <span class="ion-calendar"></span><span class="cta-copy">BOOK NOW</span>
 
     </button>
+    </a>
 
 </section>
          
+<!-----PART 1----->    
 <section class="main-content">
- 
-<!-----PART 1----->
     
     <div class="clearfix">
         
         <!--ABOUT JULIA -->
         <div class="feature column third">
             
-            <h5 class="JulesBaker">Meet Jules</h5>
+            <h1 class="JulesBaker">Meet Jules Baker</h1>
                 
-            <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus velit in felis feugiat, et laoreet ligula consequat. Nunc ac consequat dui. Nullam faucibus venenatis neque, euismod ullamcorper diam suscipit maximus. Morbi id condimentum lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class="about">I found my new home in San Diego this summer! After growing up on the East Coast, I figured it was time to shake things up. I packed her bags and set up shop in Kelly Cardenas' San Diego salon. Besides cutting hair, I love playing piano, hanging out with friends, and playing fetch with my trusty canine companion, Millie. Follow me on Instagram, Pinterest, and Facebook!
             </p>
         
         </div>
@@ -103,7 +115,7 @@
         <!--SALON DETAILS -->
         <div class="feature column third">
 
-            <div class="testimonial-photo julia"><img src="assets/images/Jules_Baker.png"></div>
+            <div class="testimonial-photo julia"><img src="assets/images/red_lips.jpg"></div>
 
         </div>
         
@@ -121,103 +133,92 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.390087850435!2d-77.03391418464906!3d38.915060579568035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7c1fb3abf15%3A0x82472549dc874bc2!2sImmortal+Beloved!5e0!3m2!1sen!2sus!4v1481666459640" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
-        
-        <!--BLACK GRADIENT BEHIND UBER BUTTON MIMICS GRADIENT ON BUTTON IMAGE-->
-        <div class="background-uber">
-            
-            <div class="uber-button">
-                
-                <!--UBER API CALL-->
-                <div>
-                    
-                    <!--OPENS UBER APP IF INSTALLED, ELSE REDIRECTS TO SIGN UP PAGE--> 
-                    <span class="request"><a href="https://m.uber.com/ul/?client_id=XXpsVFuuKCVJup4n2nXMC-4pdIT90srQ&action=setPickup&pickup=my_location&dropoff[latitude]=38.915286&dropoff[longitude]=-77.031726&dropoff[nickname]=Immortal%20Beloved&dropoff[formatted_address]=1831%2014th%20St%20NW%2C%20Washington%2C%20DC%2020009" target="_blank">[ Request ]</a>
-                    </span>
-                    
-                </div>
-            
-            </div>
-                
-        </div>
                      
     </div>
     
 <!-----PART 2----->
     
     <div class="testimonials container clearfix">
-        
+         
         <!--1ST TESTIMONIAL-->
         <div class="feature column third one">
             
-            <div class="testimonial-photo"><img src="assets/images/Victoria_Hadley.png"></div>
+            <div class="testimonial-photo"><img src="assets/images/Marissa_Leigh.png"></div>
                 
-                <h5 class="name">Victoria Hadley</h5>
-                    
-                    <p class="testimonial-quote">"Jules' down to earth and sweet nature makes you feel comfortable to ask for what you truly want out of your cut and style. She listens to my concerns and ideas and truly has a passion for helping people feel beautiful!"</p>
+            <h1 class="name">Marissa</h1>    
+                     
+            <p class="testimonial-quote">"Getting my hair done with Jules was a great experience. From the moment I sat down in her chair I felt comfortable and confident. She understood exactly what I was looking for and I walked away with a haircut that not only looked great that day, but every day after that (something that's hard to find)!"</p>
+                 
         </div>
         
         <!--2ND TESTIMONIAL-->
         <div class="feature column third two">
-            
-            <div class="testimonial-photo"><img src="assets/images/Marissa_Leigh.png"></div>
-                
-                <h5 class="name">Marissa Leigh</h5>    
+        
+            <div class="testimonial-photo"><img src="assets/images/Nika_Castillo.png"></div>
                      
-                    <p class="testimonial-quote">"Getting my hair done with Jules was a great experience. From the moment I sat down in her chair I felt comfortable and confident. She understood exactly what I was looking for and I walked away with a haircut that not only looked great that day, but every day after that (something that's hard to find)!"</p>
-                 
+            <h1 class="name">Nika</h1>
+                     
+            <p class="testimonial-quote">"Jules is a champion. I flew from Toronto to D.C. to see her! I have really dry hair but I like to keep it long, which can be a problem. Jules really listens to what I want and advises me on what would work best with my hair. She even gives me lots of tips on styling and how to keep my hair looking great!" </p>
+        
         </div>
         
         <!--3RD TESTIMONIAL-->
         <div class="feature column third three">
+            
+            <div class="testimonial-photo"><img src="assets/images/Victoria_Hadley.png"></div>
+                
+            <h1 class="name">Victoria</h1>
+                    
+            <p class="testimonial-quote">"Jules' down to earth and sweet nature makes you feel comfortable to ask for what you truly want out of your cut and style. She listens to my concerns and ideas and truly has a passion for helping people feel beautiful!"</p>
         
-            <div class="testimonial-photo"><img src="assets/images/will.png"></div>
-                     
-                <h5 class="name">Jayden's Dad</h5>
-                     
-                    <p class="testimonial-quote">"Can a woman find a good hairdresser? Does a tree that falls in the forest make a sound? The answer doesn't matter if Jules is doing your hair!" </p>
         </div>
-        
-        
-             
+                 
     </div>
     
     <!-- CALL TO ACTION BELOW TESTIMONIAL -->
     <div class ="button-container">
 
-        <button class="call-to-action-button-2" onclick="Calendly.showPopupWidget('https://calendly.com/brandonbaker40');return false;">
+        <!--<button class="call-to-action-button-2" onclick="Calendly.showPopupWidget('https://calendly.com/brandonbaker40');return false;">
 
                 <span class="ion-calendar"></span><span class="cta-copy">BOOK NOW</span>
 
-        </button>
+        </button>-->
+        <a href="https://outlook.office365.com/owa/calendar/RanworthCo@bakerrehabgroup.com/bookings/" target="_blank">
+        <button class="call-to-action-button-2">
+            <span class="ion-calendar"></span><span class="cta-copy">BOOK NOW</span>
+            
+            </button>
+        </a>
 
     </div>
+    
  </section>   
      <!--CONTACT FORM-->       
     <div class="contact-form-background">
-    <div class="contact-form">
+        
+        <div class="contact-form">
 
-        <form action="https://getsimpleform.com/messages?form_api_token=df0c0023d919dfd1c3c04db6299a3542" method="post">
-                
-            <h4 class="contact-form-head">Send me a message!</h4>
+            <form action="https://getsimpleform.com/messages?form_api_token=df0c0023d919dfd1c3c04db6299a3542" method="post">
 
-            <label for="name">Name</label>
-            <input type="text" id="name">
+                <h4 class="contact-form-head">Send me a message!</h4>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email">
+                <label for="name">Name</label>
+                <input type="text" id="name">
 
-            <label for="message">Message</label>
-            <!--<input type="text" id="message">-->
-            <textarea id="message" cols="40" rows="5"></textarea>
+                <label for="email">Email Address</label>
+                <input type="email" id="email">
 
-            <input type="submit" value="Submit">
+                <label for="message">Message</label>
+                <!--<input type="text" id="message">-->
+                <textarea id="message" cols="40" rows="5"></textarea>
 
-        </form>
+                <input type="submit" value="Submit">
 
+            </form>
+
+        </div>
+    
     </div>
-    </div>
-
-
 
 <footer>
     

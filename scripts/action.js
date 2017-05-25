@@ -8,14 +8,11 @@ $(document).ready(function () {
        $(this).animate({'top': '0px'}, 'fast') 
     });
     
-    $('.testimonial-photo').on('mouseenter', 'img', function () {
-        $(this).css({'opacity' : '0.5'});
-    });
-    
-    $('.testimonial-photo').on('mouseleave', 'img', function () {
-        $(this).css({'opacity' : '1'});
+    $('.toggle-nav, .menu a').click(function(e) {
+        $(this).toggleClass('active');
+        $('.menu ul').toggleClass('active');
+        $(console.log("body log"));
+        e.preventDefault();
     });
 
 });
-
-
