@@ -35,11 +35,11 @@ body.landing {
     }
 
 .menu {
-        position: fixed;
-        display: inline-block;
-        width: 100%;
-        z-index: 200; 
-    }
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    z-index: 200; 
+}
  
 .menu ul.active {
     max-height: 300px;

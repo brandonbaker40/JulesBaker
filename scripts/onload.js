@@ -22,6 +22,7 @@ var handleWindowSize = function () {
             }
 
 $(document).ready(function () {
+    //$('toggle-nav').hide();
     
     handleWindowSize();
     
@@ -31,4 +32,4 @@ $(document).ready(function () {
 
     });   
 
-})
+});
