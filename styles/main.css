@@ -424,6 +424,10 @@ label[for=message] {
 
 /* Medium and small screens (640px) */
 @media (min-width: 640px) {
+    .menu {
+         display: none;
+    }
+    
     html { 
         font-size: 120%; 
     }
@@ -515,106 +519,10 @@ label[for=message] {
     
 /*Large screens (1024px) */
 @media (min-width: 1024px) {
-    /* RADICAL ***/
 
-.menu {
-    position: relative;
-    display:inline-block;
-    width: 100%;
-}
-
-.menu ul.active {
-    display: none;
-}
-
-.menu ul {
-    display: none;
-}
-
-.menu ul:after {
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 0%;
-    right: 22px;
-    transform: translate(0%, -100%);
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #303030;
-}
-
-.menu li {
-    margin: 15px 0px 15px 0px;
-    float: none;
-    display: block;
-    color: #000;
-    font-size: 2rem;
-}
-
-.menu a {
-    display: block;
-    color: black;
-}
-
-.toggle-nav {
-    width: 80px;
-    padding: 20px;
-    display: inline-block;
-    background: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.toggle-nav:hover, .toggle-nav.active {
-    text-decoration:none;
-    color:#000;
-}
-/* END RADICAL    ****** */
-    
-    
-    
     .wrap {
         width:100%;
     }
-    
-   /* .toggle-nav {
-        height: auto;
-        max-height: 0;
-    }
-    
-    
-    .menu {
-        width:100%;
-        padding:10px 18px;
-        border-radius:3px;
-        background:#303030;
-    }
-
-    .menu ul {
-        display:inline-block;
-    }
-
-    .menu li {
-        margin:0px 50px 0px 0px;
-        float:left;
-        list-style:none;
-        font-size:17px;
-    }
-
-    .menu li:last-child {
-        margin-right:0px;
-    }
-
-    .menu a {
-        text-shadow:0px 1px 0px rgba(0,0,0,0.5);
-        color:#777;
-        transition:color linear 0.15s;
-    }
-
-    .menu a:hover, .menu .current-item a {
-        text-decoration:none;
-        color:#66a992;
-    }*/
     
     .hero-content {
         min-height: 550px;
