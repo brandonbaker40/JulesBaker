@@ -1,5 +1,9 @@
 $(document).ready(function () {
     
+    $('form').submit(function(){
+        alert("Success!");
+    });
+    
     $('.toggle-nav, .menu a').toggleClass('active');
     
     $('.links-container').on('mouseenter', 'a', function () {

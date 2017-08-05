@@ -54,7 +54,7 @@ body.landing {
     padding: 10px 18px 10px 18px;
     border-radius: 3px;
     background: rgba(0,0,0,0);
-    z-index: 20;
+    z-index: 400;
     height: auto;
     max-height: 0px;
     overflow: hidden;
@@ -180,7 +180,7 @@ body.landing {
     border: 0;
     cursor: pointer;
     border-radius: 5px;
-    z-index: 300;
+    z-index: 100;
     
 }
 
@@ -423,6 +423,15 @@ label[for=message] {
     padding-left: 10px;
 }
 
+
+/* Medium and small screens (640px) */
+@media (max-width: 639px) {
+    .gradient-overlay-hero img {
+        display: none;
+    }
+}
+
+
 /* Medium and small screens (640px) */
 @media (min-width: 640px) {
     .menu {
@@ -435,7 +444,7 @@ label[for=message] {
         min-height: 350px;
         height: 100%;
         background-color: white;
-        z-index: 250;
+        z-index: 99;
         
         background: -moz-linear-gradient(83deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.86) 92%, rgba(255,255,255,1) 100%); /* ff3.6+ */
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(8%, rgba(255,255,255,0.86)), color-stop(100%, rgba(255,255,255,0))); /* safari4+,chrome */
@@ -444,10 +453,6 @@ label[for=message] {
         background: -ms-linear-gradient(83deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.86) 92%, rgba(255,255,255,1) 100%); /* ie10+ */
         background: linear-gradient(7deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.86) 86%, rgba(255,255,255,1) 100%); /* w3c */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#ffffff',GradientType=0 ); /* ie6-9 */
-        
-    }
-    
-    .big-logo {
         
     }
     
