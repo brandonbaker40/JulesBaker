@@ -1,8 +1,8 @@
 $(document).ready(function () {
     
-    $('form').submit(function(){
-        alert("Success!");
-    });
+//    $('form').submit(function(){
+//        alert("Success!");
+//    });
     
     $('.toggle-nav, .menu a').toggleClass('active');
     
@@ -16,12 +16,12 @@ $(document).ready(function () {
     
     $('.menu ul').toggleClass('active');
     
-    $('.toggle-nav, .menu a').click(function(e) {
+    $('.toggle-nav').click(function(e) {
         $(this).toggleClass('active');
         $('.menu ul').toggleClass('active');
-        $(console.log("body log"));
         e.preventDefault();
     });
+    
 
 });
 

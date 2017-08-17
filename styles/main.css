@@ -27,7 +27,6 @@ body.landing {
     height: 100px;
     z-index: 400;
     top: 0%;
-    
 }
 
 .wrap {
@@ -44,7 +43,6 @@ body.landing {
 .menu ul.active {
     max-height: 300px;
     background-color: #fff;
-
 }
 
 .menu ul {
@@ -114,19 +112,7 @@ body.landing {
     margin: auto;
 }
 
-
-/**** END OF IT ALL ***/
-
-/*.sticky-header {
-    align-content: center;
-    position: fixed;
-    z-index: 98;
-    width: 70%;
-    background-color: rgba(255,255,255,0.75);
-}*/
-
-
-/********* END MOBILE NAVBAR TEMPLATE *******/
+/********* END MOBILE HEADER TEMPLATE *******/
 
 
 .ion-calendar {
@@ -146,6 +132,7 @@ body.landing {
         
 }
 
+/*
 .hero-quote {
     position: absolute;
     top: 10%;
@@ -158,6 +145,7 @@ body.landing {
     text-align: center;
     color: white;
 }
+*/
 
 .call-to-action-button {
     position: absolute;
@@ -174,7 +162,7 @@ body.landing {
     width: 400px;
     font-size: 2rem;
     font-weight: 700;
-    background-color: rgb(47, 159, 163);
+    background-color: rgba(47, 159, 163, 0.8);
     padding: 1% 2% 1% 2%;
     text-transform: uppercase;
     border: 0;
@@ -187,10 +175,6 @@ body.landing {
 .ion-calendar {
     color: white;
 }
-
-/*.cont {
-    background-image: url(../assets/images/black_texture.png);
-}*/
 
 .clearfix {
     background-color: rgb(0,0,0,0.2);
@@ -216,6 +200,8 @@ body.landing {
 
 .about {
     padding: 0% 7% 0% 7%;
+    color: #444;
+    letter-spacing: .07rem;
 }
 
 .julia {
@@ -234,52 +220,6 @@ iframe {
     height: 250px; 
 }
 
-
-/*******  MOBILE ONLY ELEMENTS START  ********/
-
-
-
-.background-uber {
-    position: relative;
-    width: 85%;
-    background: #0d0d1e; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#282836, #0d0d1e); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#282836, #0d0d1e); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#282836, #0d0d1e); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#282836, #0d0d1e); /* Standard syntax */
-    height: auto;
-    margin: auto;
-}
-
-.uber-button {
-    position: relative;
-    background-image: url(../assets/images/uber-button300w.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    width: 85%;
-    height: 43px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.request {
-    position: absolute;
-    top: 15px;
-    right: 0;
-    text-transform: uppercase;
-    font-family: FF Clan Pro Medium;
-    letter-spacing: 0.1rem;
-}
-
-.request a:visited, 
-.request a:link, 
-.request a:hover {
-    color: #1fbad6;
-    text-decoration: none;
-}
-/*******  MOBILE ONLY ELEMENTS END  ********/
-
 /*******  PART 2  ********/
 
 .testimonial-photo img {
@@ -295,6 +235,8 @@ iframe {
 .testimonial-quote {
     padding: 0% 7% 0% 7%;
     font-style: italic;
+    color: #444;
+    letter-spacing: .07rem;
 }
 
 .testimonials {
@@ -337,7 +279,7 @@ iframe {
     width: 400px;
     font-size: 2rem;
     font-weight: 700;
-    background-color: rgb(47, 159, 163);
+    background-color: rgba(47, 159, 163, 0.8);
     padding: 1% 2% 1% 2%;
     text-transform: uppercase;
     border: 0;
@@ -406,8 +348,6 @@ label[for=message] {
     display: block;
     padding-bottom: 8px;
 }
-
-
 
 /******* FOOTER ********/
 
@@ -486,11 +426,6 @@ label[for=message] {
         padding: 0% 0% 0% 0%;
     }
     
-    /** HIDES UBER ON NON-MOBILE VIEWPORTS **/
-    .uber-button {
-        display: none;
-    }
-    
     .column {
         float: left;
         padding-left: 1rem;
@@ -535,15 +470,15 @@ label[for=message] {
     
     }
     
-    /** USED WITH ONLOAD.JS FOR HANDLEWINDOWSIZE FUNCTION **/
-    .column.full { width: 100%; }
-    .column-two-thirds { width:66.7%; }
-    .column.half { width: 50%; }
-    .column.third { width: 33.3%; }
-    .column.fourth { width: 25%; }
-    .column.flow-opposite { float: right; }
-    
-    }
+/** USED WITH ONLOAD.JS FOR HANDLEWINDOWSIZE FUNCTION **/
+.column.full { width: 100%; }
+.column-two-thirds { width:66.7%; }
+.column.half { width: 50%; }
+.column.third { width: 33.3%; }
+.column.fourth { width: 25%; }
+.column.flow-opposite { float: right; }
+
+}
     
 /*Large screens (1024px) */
 @media (min-width: 1024px) {
